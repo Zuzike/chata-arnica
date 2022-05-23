@@ -79,6 +79,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--background-secondary);
 }
 
 .pricelist__title {
@@ -102,7 +103,6 @@ span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin-bottom: 0.5rem;
 }
 
@@ -185,6 +185,58 @@ span {
 
 /* SEM ZAČNĚTE PSÁT SVÉ STYLY PRO MOBIL */
 
+body {
+  color: var(--text);
+  font-family: 'Alegreya Sans', sans-serif;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-secondary);
+}
+.pitch {
+  text-align: center;
+  background-color: var(--background-secondary);
+}
+.footer {
+  background-color: var(--background-secondary);
+}
+.navlink {
+  color: var(--text);
+}
+.logo {
+  font-size: 1.5rem;
+  font-family: 'Dawning of a New Day';
+  font-style: italic;
+}
+.subheading {
+  background-color: var(--background-primary);
+  max-width: 800px;
+}
+.subheading__content {
+  text-align: center;
+}
+.intro-image {
+  background-image: url('./images/arnica-intro.jpg');
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.offer {
+  width: 80%;
+  max-width: 270px;
+}
+.review {
+  background-color: var(--background-primary);
+}
+
+.review__text {
+  font-style: 'oblique';
+  border: 2px solid var(--background-secondary);
+}
+
 @media (min-width: 840px) {
   /* HLAVIČKA - NAVIGACE */
   .page-header {
@@ -204,6 +256,9 @@ span {
 
   .pitch {
     font-size: 3rem;
+  }
+  .pitch > p {
+    font-family: 'Lora', serif;
   }
 
   /* ÚVODNÍ TEXT */
